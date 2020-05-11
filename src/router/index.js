@@ -11,7 +11,7 @@ VueRouter.prototype.push = function push (to) {
 }
 
 const routes = new VueRouter({
-    mode:'history',
+    // mode:'history',
     routes:[
                 //视图主界面
              {
