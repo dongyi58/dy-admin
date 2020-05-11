@@ -1,0 +1,88 @@
+
+
+//全局基本字体颜色
+$global_color:#383838;
+//白色
+$white:#fff;
+//
+$white1:#f1f1f1;
+//浅白
+$light_white:#F7F4F8;
+//灰白
+$gray_white:#f5f5f5;
+//灰色
+$gray:#999;
+//深灰色
+$dark_gray:#595959;
+//红色
+$red:#fd0100;
+//主页背景色
+$main_color:#f8f9fb;
+
+//字体大小
+$size_12:1.2rem;
+$size_14:1.4rem;
+$size_16:1.6rem;
+$size_18:1.8rem;
+$size_20:2rem;
+$size_22:2.2rem;
+$size_25:2.5rem;
+//普通白色边框 
+$border_bottom:1px solid #f5f5f5;
+$border_top:1px solid #f5f5f5;
+$border_right:1px solid #f5f5f5;
+$border_left:1px solid #f5f5f5;
+
+html,body{
+  color:$global_color;
+  overflow: hidden;
+  font-size:62.5%;
+}
+ *{
+   padding:0;
+   margin:0;
+   font-style: normal
+ }
+ li{
+   list-style: none;
+ }
+
+
+
+//文字溢出隐藏
+@mixin longtext {
+  
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+//内容页公共样式
+
+.global_wrap{
+    padding:10px;
+}
+
+.bg_white{
+    background-color:$white;
+    border-radius:5px;
+
+}
+.bg_light_white{
+  background-color:$gray_white;
+  border-radius:5px;
+}
+
+//通用样式
+
+
+
+
+
+
+
+
+
+
+
+  
