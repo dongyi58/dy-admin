@@ -35,12 +35,14 @@
                      
                        <div class="home_right_list">
                            <div class="r_title">用户列表</div>
-                            <div class="home_right_list_item" v-for="(item,idx) in 20" :key="idx">
+                            <div class="right_scroll_view">
+                              <div class="home_right_list_item" v-for="(item,idx) in 20" :key="idx">
                                 <img src="../../assets/1.jpg" alt="" width="50" style="flex-shirk:0">
                                 <div class="r_content">
                                   <span>Nursas</span>
                                   <span>asdasdasdasd</span>
                                 </div>
+                              </div>
                             </div>
                        </div>
                   </div>
@@ -188,6 +190,10 @@ export default {
           background:#fff;
           padding:1rem 2rem;
           border-radius:3px;
+          .right_scroll_view{
+            height: calc(100% - 60px);
+            overflow-x: hidden;
+          }
            .r_title{
               font-size:14px;
               font-weight: 600;
