@@ -1,5 +1,7 @@
 # 后台管理模板
 
+[预览地址](https://2015cbwithme.github.io/dy-admin/dist/#/home)
+
 > 从0开始自己搭建的一个最基础后台管理的模板界面
 > 使用vue最新脚手架搭建环境，编写界面，使用axios请求接口，mockjs作为模拟数据。
 ## 项目结构
@@ -26,4 +28,3 @@
 
 
 
-[预览地址](https://2015cbwithme.github.io/dy-admin/dist/#/home)
