@@ -18,7 +18,7 @@ let Axios = axios.create({
 
   //响应拦截
   Axios.interceptors.response.use(res=>{
-        console.log(res)
+       
             return res
   })
   

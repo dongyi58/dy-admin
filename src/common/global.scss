@@ -41,7 +41,8 @@ html,body{
  *{
    padding:0;
    margin:0;
-   font-style: normal
+   font-style: normal;
+   box-sizing: border-box ;
  }
  li{
    list-style: none;
@@ -58,6 +59,8 @@ html,body{
 }
 
 //内容页公共样式
+
+//容器高度
 
 .global_wrap{
     padding:10px;

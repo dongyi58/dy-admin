@@ -5,15 +5,13 @@
 </template>
 
 <script>
-import './util/mock'
+
 export default {
   name: 'App',
   components: {
   },
   mounted(){
-    this.$http('/mockdata').then(res=>{
-      console.log(res)
-    })
+    
   }
 }
 </script>

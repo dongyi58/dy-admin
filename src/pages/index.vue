@@ -1,8 +1,6 @@
 <template>
    <div class="main_container">
-         
-           
-              <!-- 侧边栏 -->
+            <!-- 侧边栏 -->
               <sideMenu />
 
               <!-- 右侧内容区域 -->
@@ -15,7 +13,7 @@
                 <!-- 子路由展示 -->
                  <transition name="fade-transform" mode="out-in">
                   <keep-alive>
-                      <router-view :include="tagsList" class="content_view"></router-view>
+                      <router-view :include="tagsList"></router-view>
                     </keep-alive>
                   </transition>
               </div>
@@ -84,14 +82,11 @@ export default {
  .main_container{
    display:flex;
   .main_right{
-    flex:1
+    position: absolute;
+    right: 0;
+    left: 250px;
+    background:$main_color;
   }
  }
 
- .content_view{
-   padding:1rem;
- }
- .main_right{
-   background:$main_color
- }
 </style>

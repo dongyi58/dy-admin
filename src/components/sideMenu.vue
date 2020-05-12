@@ -162,6 +162,7 @@ export default {
     .mainMenu{
       height:100vh;
       border:0;
+      z-index:99;
     }
     .mainMenu:not(.el-menu--collapse) {
      width: 250px;

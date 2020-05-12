@@ -133,7 +133,7 @@
 		overflow: hidden;
 		background: #fff;
 		padding-right: 120px;
-		box-shadow: 0 5px 10px #ddd;
+		box-shadow: 2px 6px 4px #eee;
 	}
 
 	.tags ul {

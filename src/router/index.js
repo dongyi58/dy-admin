@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 Vue.use(VueRouter)
 Vue.use(ElementUI);
 const VueRouterPush = VueRouter.prototype.push 
@@ -10,7 +11,7 @@ VueRouter.prototype.push = function push (to) {
     return VueRouterPush.call(this, to).catch(err => err)
 }
 
-const routes = new VueRouter({
+const router = new VueRouter({
     // mode:'history',
     routes:[
                 //视图主界面
@@ -53,4 +54,12 @@ const routes = new VueRouter({
         
     ]
 })
-export default routes
+router.beforeEach((to, from, next) => {
+    NProgress.start()
+    next()
+})
+  
+router.afterEach(() => {
+    NProgress.done()
+})
+export default router
